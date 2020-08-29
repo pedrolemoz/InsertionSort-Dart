@@ -1,0 +1,13 @@
+name: insertion_sort
+description: An implementation of insertion sort algorithm in Dart
+version: 1.0.2
+# author: Pedro Lemos <lemozxpedro@gmail.com>
+homepage: https://github.com/pedrolemoz/InsertionSort-Dart
+
+environment:
+  sdk: ">=2.0.0 <3.0.0"
+
+dependencies:
+  test: ^1.15.3
+dev_dependencies:
+  effective_dart: ^1.2.0
