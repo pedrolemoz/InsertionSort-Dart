@@ -13,19 +13,18 @@ List<int> insertionSort(List<int> listOfElements) {
 
     /// We should stop ordering in two scenarios:
     ///
-    /// If the previous index equals zero, which means that we reached the end of
-    /// the array.
+    /// If the previous index is less than zero
     /// If the current element is greater than the element we want to order.
     while (previousIndex >= 0 && listOfElements[previousIndex] > element) {
-      /// If the above verification equals true, it means that we need to move the
-      /// current element to the next index
+      /// If the above verification equals true, it means that we need to move
+      /// the current element to the next index
       listOfElements[previousIndex + 1] = listOfElements[previousIndex];
       previousIndex = previousIndex - 1;
     }
 
-    /// If we reach this point, it means that previous index equals zero or the
-    /// current element is greater than the element we want to order.
-    /// In this case, we'll assign the next index to our element
+    /// If we reach this point, it means that previous index is less than zero
+    /// or the current element is greater than the element we want to order.
+    /// In this case, we'll assign the to our element
     listOfElements[previousIndex + 1] = element;
   }
 
